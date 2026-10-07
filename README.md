@@ -1,7 +1,10 @@
 # AIP 缩略图处理器
 
 让 Windows 资源管理器直接显示 `.aip` 文件里**最新代图像**的缩略图，而不是千篇一律的图标 logo。
+**换了文件夹位置怎么办**
 
+`CodeBase` 是绝对路径。把整个 `thumbnail` 文件夹挪走后，重新双击一次 `register.bat` 即可
+（它会重写 CodeBase 指向新位置）。
 ---
 
 ## 三步走
@@ -186,7 +189,4 @@ python _gen_scripts.py                          # 重新生成脚本
 
 `unregister.bat` 一键还原，不留尾巴。
 
-**换了文件夹位置怎么办**
 
-`CodeBase` 是绝对路径。把整个 `thumbnail` 文件夹挪走后，重新双击一次 `register.bat` 即可
-（它会重写 CodeBase 指向新位置）。
